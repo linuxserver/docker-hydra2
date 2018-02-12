@@ -34,5 +34,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 5076
+EXPOSE 5075
 VOLUME /config /downloads
