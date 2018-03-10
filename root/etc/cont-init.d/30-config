@@ -6,4 +6,6 @@ mkdir -p /config/logs
 
 # permissions
 chmod +x /app/hydra2/nzbhydra2
-chown -R abc:abc /config
+chown -R abc:abc \
+	/app/hydra2 \
+	/config

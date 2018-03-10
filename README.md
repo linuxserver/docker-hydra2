@@ -79,4 +79,5 @@ The web interface is at `<your ip>:5076` , to set up indexers and connections to
 
 ## Versions
 
++ **09.03.18:** Fix app permissions
 + **11.01.18:** Initial Release.
