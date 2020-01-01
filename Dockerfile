@@ -14,15 +14,14 @@ RUN \
  echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
-	curl \
+	jq \
 	unzip && \
  apt-get install --no-install-recommends -y \
-	openjdk-11-jre-headless \
-	python && \
+	openjdk-11-jre-headless && \
  echo "**** install hydra2 ****" && \
  if [ -z ${HYDRA2_RELEASE+x} ]; then \
 	HYDRA2_RELEASE=$(curl -sX GET "https://api.github.com/repos/theotherp/nzbhydra2/releases/latest" \
-	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
+	| jq -r .tag_name); \
  fi && \
  HYDRA2_VER=${HYDRA2_RELEASE#v} && \
  curl -o \
@@ -30,10 +29,7 @@ RUN \
 	"https://github.com/theotherp/nzbhydra2/releases/download/v${HYDRA2_VER}/nzbhydra2-${HYDRA2_VER}-linux.zip" && \
  mkdir -p /app/hydra2 && \
  unzip /tmp/hydra2.zip -d /app/hydra2 && \
- curl -o \
- /app/hydra2/nzbhydra2wrapper.py -L \
-	"https://raw.githubusercontent.com/theotherp/nzbhydra2/master/other/wrapper/nzbhydra2wrapper.py" && \
- chmod +x /app/hydra2/nzbhydra2wrapper.py && \
+ chmod +x /app/hydra2/nzbhydra2 && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/* \
@@ -45,4 +41,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 5076
-VOLUME /config /downloads
+VOLUME /config

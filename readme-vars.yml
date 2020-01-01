@@ -53,6 +53,7 @@ app_setup_block: |
 # changelog
 
 changelogs:
+  - { date: "01.01.20:", desc: "Remove python and run directly using Java." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
   - { date: "11.02.19:", desc: "Add pipeline logic and multi arch." }
   - { date: "18.08.18:", desc: "Bump java version to 10, (bionic currently refers to it as version 11)." }
