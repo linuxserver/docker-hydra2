@@ -36,7 +36,7 @@ Find us at:
 [![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-hydra2/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-hydra2/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/hydra2/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/hydra2/latest/index.html)
 
-THIS IMAGE IS DEPRECATED. We will contine releases with a new image under the correct name: linuxserver/nzbhydra2.
+THIS IMAGE IS DEPRECATED. We will continue releases with a new image under the correct name: linuxserver/nzbhydra2.
 
 [Hydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra).
 
@@ -226,6 +226,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **19.04.20:** - Deprecated. New repo at `linuxserver/docker-nzbhydra2`.
 * **08.01.20:** - Switch to python3.
 * **05.01.20:** - Add dev tag for prereleases.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.

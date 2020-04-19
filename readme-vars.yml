@@ -5,7 +5,7 @@ project_name: hydra2
 project_url: "https://github.com/theotherp/nzbhydra2"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hydra-icon.png"
 project_blurb: |
-  THIS IMAGE IS DEPRECATED. We will contine releases with a new image under the correct name: linuxserver/nzbhydra2.
+  THIS IMAGE IS DEPRECATED. We will continue releases with a new image under the correct name: linuxserver/nzbhydra2.
 
   [{{ project_name|capitalize }}]({{ project_url }}) is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra).
 
@@ -58,6 +58,7 @@ app_setup_block: |
 # changelog
 
 changelogs:
+  - { date: "19.04.20:", desc: "Deprecated. New repo at `linuxserver/docker-nzbhydra2`." }
   - { date: "08.01.20:", desc: "Switch to python3." }
   - { date: "05.01.20:", desc: "Add dev tag for prereleases." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
