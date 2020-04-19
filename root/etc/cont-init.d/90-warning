@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bash
+
+echo '
+******************************************************
+******************************************************
+*                                                    *
+*                                                    *
+*           This image has been deprecated           *
+*                                                    *
+*     We will continue releases with a new image     *
+*               under the correct name               *
+*                                                    *
+*               linuxserver/nzbhydra2                *
+*                                                    *
+*   https://hub.docker.com/r/linuxserver/nzbhydra2   *
+*                                                    *
+*  https://github.com/linuxserver/docker-nzbhydra2   *
+*                                                    *
+*                                                    *
+*                                                    *
+******************************************************
+******************************************************'
